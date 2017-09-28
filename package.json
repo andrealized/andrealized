@@ -6,18 +6,18 @@
     "react-scripts": "0.4.3"
   },
   "dependencies": {
-    "react": "^15.3.2",
-    "react-dom": "^15.3.2",
-    "tachyons": "^4.8.1",
-    "tachyons-cli": "^1.0.11"
+    "next": "^3.2.2",
+    "prop-types": "^15.5.10",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-flexbox-grid": "^1.1.5",
+    "react-icons": "^2.2.5",
+    "react-styled-flexboxgrid": "^2.0.3",
+    "styled-components": "^2.1.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "css": "tachyons src/css/app.css > src/index.css --minify",
-    "prestart": "npm run css",
-    "prebuild": "npm run css"
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
   }
 }
