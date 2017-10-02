@@ -34,26 +34,6 @@ var _jsxFileName = '/Users/ayang/Desktop/andrea-site/pages/PhotographyPage.js';
 
 var LeftArrow = require('react-icons/lib/ti/arrow-left');
 
-var PHOTO_SET = [{
-	src: '/static/images/img1.jpg',
-	width: 640,
-	height: 640,
-	alt: 'code',
-	label: 'code'
-}, {
-	src: '/static/images/img2.jpg',
-	width: 640,
-	height: 640,
-	alt: 'photography',
-	label: 'photography'
-}, {
-	src: '/static/images/img3.jpg',
-	width: 640,
-	height: 640,
-	alt: 'design',
-	label: 'design'
-}];
-
 var PhotographyPage = function (_Component) {
 	(0, _inherits3.default)(PhotographyPage, _Component);
 
@@ -66,43 +46,61 @@ var PhotographyPage = function (_Component) {
 	(0, _createClass3.default)(PhotographyPage, [{
 		key: 'render',
 		value: function render() {
-			return _react2.default.createElement('div', { className: 'content-page', __source: {
+			return _react2.default.createElement('div', {
+				__source: {
 					fileName: _jsxFileName,
-					lineNumber: 32
+					lineNumber: 8
 				}
 			}, _react2.default.createElement('div', { className: 'content-page-header', __source: {
 					fileName: _jsxFileName,
-					lineNumber: 33
+					lineNumber: 9
 				}
 			}, _react2.default.createElement(LeftArrow, { className: 'nav-icon', onClick: this.props.onBack, __source: {
 					fileName: _jsxFileName,
-					lineNumber: 34
+					lineNumber: 10
 				}
-			})), _react2.default.createElement('img', { src: PHOTO_SET[0].src, className: 'photo', __source: {
+			})), _react2.default.createElement('div', { className: 'photos-page-content', __source: {
 					fileName: _jsxFileName,
-					lineNumber: 36
+					lineNumber: 12
 				}
-			}), _react2.default.createElement('img', { src: PHOTO_SET[1].src, className: 'photo', __source: {
+			}, _react2.default.createElement('h1', {
+				__source: {
 					fileName: _jsxFileName,
-					lineNumber: 37
+					lineNumber: 13
 				}
-			}), _react2.default.createElement('img', { src: PHOTO_SET[2].src, className: 'photo', __source: {
+			}, 'Photography'), _react2.default.createElement('img', { src: '/static/images/rail-trail-bridge.jpg', className: 'photo', __source: {
 					fileName: _jsxFileName,
-					lineNumber: 38
+					lineNumber: 14
 				}
-			}), _react2.default.createElement('img', { src: PHOTO_SET[0].src, className: 'photo', __source: {
+			}), _react2.default.createElement('img', { src: '/static/images/kennedy.jpg', className: 'photo', __source: {
 					fileName: _jsxFileName,
-					lineNumber: 39
+					lineNumber: 15
 				}
-			}), _react2.default.createElement('img', { src: PHOTO_SET[1].src, className: 'photo', __source: {
+			}), _react2.default.createElement('img', { src: '/static/images/horses.jpg', className: 'photo', __source: {
 					fileName: _jsxFileName,
-					lineNumber: 40
+					lineNumber: 16
 				}
-			}), _react2.default.createElement('img', { src: PHOTO_SET[2].src, className: 'photo', __source: {
+			}), _react2.default.createElement('img', { src: '/static/images/vegas.jpg', className: 'photo', __source: {
 					fileName: _jsxFileName,
-					lineNumber: 41
+					lineNumber: 17
 				}
-			}));
+			}), _react2.default.createElement('img', { src: '/static/images/pier.jpg', className: 'photo', __source: {
+					fileName: _jsxFileName,
+					lineNumber: 18
+				}
+			}), _react2.default.createElement('img', { src: '/static/images/eiffel.jpg', className: 'photo', __source: {
+					fileName: _jsxFileName,
+					lineNumber: 19
+				}
+			}), _react2.default.createElement('img', { src: '/static/images/dc.jpg', className: 'photo', __source: {
+					fileName: _jsxFileName,
+					lineNumber: 20
+				}
+			}), _react2.default.createElement('img', { src: '/static/images/hawaii.jpg', className: 'photo', __source: {
+					fileName: _jsxFileName,
+					lineNumber: 21
+				}
+			})));
 		}
 	}]);
 
@@ -110,4 +108,4 @@ var PhotographyPage = function (_Component) {
 }(_react.Component);
 
 exports.default = PhotographyPage;
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBhZ2VzL1Bob3RvZ3JhcGh5UGFnZS5qcyJdLCJuYW1lcyI6WyJSZWFjdCIsIkNvbXBvbmVudCIsIkxlZnRBcnJvdyIsInJlcXVpcmUiLCJQSE9UT19TRVQiLCJzcmMiLCJ3aWR0aCIsImhlaWdodCIsImFsdCIsImxhYmVsIiwiUGhvdG9ncmFwaHlQYWdlIiwicHJvcHMiLCJvbkJhY2siXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUEsQUFBTyxBQUFTOzs7Ozs7OztBQUNoQixJQUFJLFlBQUosQUFBZ0I7O0FBRWhCLElBQU07TUFDSixBQUNJLEFBQ0w7UUFGQyxBQUVNLEFBQ1A7U0FIQyxBQUdPLEFBQ1I7TUFKQyxBQUlJLEFBQ0w7UUFOaUIsQUFDaEIsQUFLTTtBQUxOLEFBQ0QsQ0FGaUI7TUFRaEIsQUFDSSxBQUNMO1FBRkMsQUFFTSxBQUNQO1NBSEMsQUFHTyxBQUNSO01BSkMsQUFJSSxBQUNMO1FBYmlCLEFBUWhCLEFBS007QUFMTixBQUNEO01BTUMsQUFDSSxBQUNMO1FBRkMsQUFFTSxBQUNQO1NBSEMsQUFHTyxBQUNSO01BSkMsQUFJSSxBQUNMO1FBcEJELEFBQWtCLEFBZWhCLEFBS007QUFMTixBQUNEOztJLEFBUW9COzs7Ozs7Ozs7OzsyQkFFWCxBQUNSOzBCQUNDLGNBQUEsU0FBSyxXQUFMLEFBQWU7ZUFBZjtpQkFBQSxBQUNDO0FBREQ7SUFBQSxrQkFDQyxjQUFBLFNBQUssV0FBTCxBQUFlO2VBQWY7aUJBQUEsQUFDQztBQUREO29DQUNDLEFBQUMsYUFBVSxXQUFYLEFBQXFCLFlBQVcsU0FBUyxLQUFBLEFBQUssTUFBOUMsQUFBb0Q7ZUFBcEQ7aUJBRkYsQUFDQyxBQUNDLEFBRUQ7QUFGQzsrQ0FFSSxLQUFLLFVBQUEsQUFBVSxHQUFwQixBQUF1QixLQUFLLFdBQTVCLEFBQXNDO2VBQXRDO2lCQUpELEFBSUMsQUFDQTtBQURBOzhDQUNLLEtBQUssVUFBQSxBQUFVLEdBQXBCLEFBQXVCLEtBQUssV0FBNUIsQUFBc0M7ZUFBdEM7aUJBTEQsQUFLQyxBQUNBO0FBREE7OENBQ0ssS0FBSyxVQUFBLEFBQVUsR0FBcEIsQUFBdUIsS0FBSyxXQUE1QixBQUFzQztlQUF0QztpQkFORCxBQU1DLEFBQ0E7QUFEQTs4Q0FDSyxLQUFLLFVBQUEsQUFBVSxHQUFwQixBQUF1QixLQUFLLFdBQTVCLEFBQXNDO2VBQXRDO2lCQVBELEFBT0MsQUFDQTtBQURBOzhDQUNLLEtBQUssVUFBQSxBQUFVLEdBQXBCLEFBQXVCLEtBQUssV0FBNUIsQUFBc0M7ZUFBdEM7aUJBUkQsQUFRQyxBQUNBO0FBREE7OENBQ0ssS0FBSyxVQUFBLEFBQVUsR0FBcEIsQUFBdUIsS0FBSyxXQUE1QixBQUFzQztlQUF0QztpQkFWRixBQUNDLEFBU0MsQUFHRjtBQUhFOzs7Ozs7QUFieUMsQTs7a0JBQXhCLEEiLCJmaWxlIjoiUGhvdG9ncmFwaHlQYWdlLmpzIiwic291cmNlUm9vdCI6Ii9Vc2Vycy9heWFuZy9EZXNrdG9wL2FuZHJlYS1zaXRlIn0=
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBhZ2VzL1Bob3RvZ3JhcGh5UGFnZS5qcyJdLCJuYW1lcyI6WyJSZWFjdCIsIkNvbXBvbmVudCIsIkxlZnRBcnJvdyIsInJlcXVpcmUiLCJQaG90b2dyYXBoeVBhZ2UiLCJwcm9wcyIsIm9uQmFjayJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQSxBQUFPLEFBQVM7Ozs7Ozs7O0FBQ2hCLElBQUksWUFBSixBQUFnQjs7SUFFSyxBOzs7Ozs7Ozs7OzsyQkFFWCxBQUNSOzBCQUNDLGNBQUE7O2VBQUE7aUJBQUEsQUFDQztBQUREO0FBQUEsSUFBQSxrQkFDQyxjQUFBLFNBQUssV0FBTCxBQUFlO2VBQWY7aUJBQUEsQUFDQztBQUREO29DQUNDLEFBQUMsYUFBVSxXQUFYLEFBQXFCLFlBQVcsU0FBUyxLQUFBLEFBQUssTUFBOUMsQUFBb0Q7ZUFBcEQ7aUJBRkYsQUFDQyxBQUNDLEFBRUQ7QUFGQzt3QkFFRCxjQUFBLFNBQUssV0FBTCxBQUFlO2VBQWY7aUJBQUEsQUFDQztBQUREO3NCQUNDLGNBQUE7O2VBQUE7aUJBQUE7QUFBQTtBQUFBLE1BREQsQUFDQyxBQUNBLHVEQUFLLEtBQUwsQUFBVSx3Q0FBd0MsV0FBbEQsQUFBNEQ7ZUFBNUQ7aUJBRkQsQUFFQyxBQUNBO0FBREE7OENBQ0ssS0FBTCxBQUFVLDhCQUE4QixXQUF4QyxBQUFrRDtlQUFsRDtpQkFIRCxBQUdDLEFBQ0E7QUFEQTs4Q0FDSyxLQUFMLEFBQVUsNkJBQTZCLFdBQXZDLEFBQWlEO2VBQWpEO2lCQUpELEFBSUMsQUFDQTtBQURBOzhDQUNLLEtBQUwsQUFBVSw0QkFBNEIsV0FBdEMsQUFBZ0Q7ZUFBaEQ7aUJBTEQsQUFLQyxBQUNBO0FBREE7OENBQ0ssS0FBTCxBQUFVLDJCQUEyQixXQUFyQyxBQUErQztlQUEvQztpQkFORCxBQU1DLEFBQ0E7QUFEQTs4Q0FDSyxLQUFMLEFBQVUsNkJBQTZCLFdBQXZDLEFBQWlEO2VBQWpEO2lCQVBELEFBT0MsQUFDQTtBQURBOzhDQUNLLEtBQUwsQUFBVSx5QkFBeUIsV0FBbkMsQUFBNkM7ZUFBN0M7aUJBUkQsQUFRQyxBQUNBO0FBREE7OENBQ0ssS0FBTCxBQUFVLDZCQUE2QixXQUF2QyxBQUFpRDtlQUFqRDtpQkFkSCxBQUNDLEFBSUMsQUFTQyxBQUlIO0FBSkc7Ozs7OztBQWpCd0MsQTs7a0JBQXhCLEEiLCJmaWxlIjoiUGhvdG9ncmFwaHlQYWdlLmpzIiwic291cmNlUm9vdCI6Ii9Vc2Vycy9heWFuZy9EZXNrdG9wL2FuZHJlYS1zaXRlIn0=

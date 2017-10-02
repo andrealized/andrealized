@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import Head from 'next/head';
 import PhotographyPage from './PhotographyPage';
+import CodingPage from './CodingPage';
+import DesignPage from './DesignPage';
+import AboutPage from './AboutPage';
+
 var Camera = require('react-icons/lib/ti/camera-outline');
 var Mail = require('react-icons/lib/ti/mail');
 var BusinessCard = require('react-icons/lib/ti/business-card');
@@ -14,7 +18,7 @@ export default class App extends Component {
 	constructor() {
 		super();
 		this.state = {
-			content: 'photography'
+			content: 'home'
 		};
 	}
 
@@ -51,15 +55,22 @@ export default class App extends Component {
 					</div>
 				: null }
 
-				{ /*************** Code ***************/ }
-				{ content === 'about' ?
-					<div></div>
+				{ content === 'coding' ?
+					<CodingPage onBack={this.showContent.bind(this, 'home')} />
 				: null }
 
-				{ /*************** Photography ***************/ }
+				{ content === 'design' ?
+					<DesignPage onBack={this.showContent.bind(this, 'home')} />
+				: null }
+
 				{ content === 'photography' ?
 					<PhotographyPage onBack={this.showContent.bind(this, 'home')} />
 				: null }
+
+				{ content === 'about' ?
+					<AboutPage onBack={this.showContent.bind(this, 'home')} />
+				: null }
+
 			</div>
 		);
 	}
