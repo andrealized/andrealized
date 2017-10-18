@@ -45,6 +45,7 @@ export default class App extends Component {
 			<div className="an-body">
 				<Head>
 					<link rel="stylesheet" href="/static/css/App.css" />
+					<meta name="viewport" content-"width=device-width, initial-scale=1" />
 				</Head>
 				{ /*************** Header ***************/ }
 				{ content === 'home' &&
