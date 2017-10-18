@@ -41,6 +41,7 @@
 .photo {
 	width: 300px;
 	margin-right: 5px;
+	cursor: pointer;
 }
 .about-page-body {
 	display: flex;
@@ -54,4 +55,10 @@
 }
 .bio-photo {
 	border-radius: 10px;
+}
+.transition {
+	transition: all 1s ease;
+}
+.transition:target {
+    color:red;
 }

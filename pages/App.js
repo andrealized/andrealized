@@ -4,6 +4,7 @@ import PhotographyPage from './PhotographyPage';
 import CodingPage from './CodingPage';
 import DesignPage from './DesignPage';
 import AboutPage from './AboutPage';
+import {ModalContainer, ModalDialog} from 'react-modal-dialog';
 
 var Camera = require('react-icons/lib/ti/camera-outline');
 var Mail = require('react-icons/lib/ti/mail');
@@ -18,15 +19,23 @@ export default class App extends Component {
 	constructor() {
 		super();
 		this.state = {
-			content: 'home'
+			content: 'home',
+			modal: null
 		};
 	}
 
 	showContent(content) {
-		console.log('show content for', content);
 		this.setState({
 			content: content
 		});
+	}
+
+	handleClick(modal) {
+		this.setState({modal: modal});
+	}
+
+	handleClose() {
+		this.setState({modal: null});
 	}
 
 	render() {
@@ -38,8 +47,8 @@ export default class App extends Component {
 					<link rel="stylesheet" href="/static/css/App.css" />
 				</Head>
 				{ /*************** Header ***************/ }
-				{ content === 'home' ?
-					<div className="header">
+				{ content === 'home' &&
+					<div className="header transition">
 						<div>
 							<div className="andrea-title" id="andrealized">andrealized</div>
 							<div className="andrea-subtitle">andrea yang</div>
@@ -53,23 +62,34 @@ export default class App extends Component {
 							<BusinessCard className="nav-icon" onClick={this.showContent.bind(this, 'about')} />
 						</div>
 					</div>
-				: null }
+				}
 
-				{ content === 'coding' ?
-					<CodingPage onBack={this.showContent.bind(this, 'home')} />
-				: null }
+				{ content === 'coding' &&
+					<CodingPage onBack={this.showContent.bind(this, 'home')} showModal={this.handleClick.bind(this)} />
+				}
 
-				{ content === 'design' ?
-					<DesignPage onBack={this.showContent.bind(this, 'home')} />
-				: null }
+				{ content === 'design' &&
+					<DesignPage onBack={this.showContent.bind(this, 'home')} showModal={this.handleClick.bind(this)} />
+				}
 
-				{ content === 'photography' ?
-					<PhotographyPage onBack={this.showContent.bind(this, 'home')} />
-				: null }
+				{ content === 'photography' &&
+					<PhotographyPage onBack={this.showContent.bind(this, 'home')} showModal={this.handleClick.bind(this)} />
+				}
 
-				{ content === 'about' ?
+				{ content === 'about' &&
 					<AboutPage onBack={this.showContent.bind(this, 'home')} />
-				: null }
+				}
+
+				{ this.state.modal &&
+					<div className="preview-modal">
+						<ModalContainer onClose={this.handleClose.bind(this)}>
+							<ModalDialog onClose={this.handleClose.bind(this)}>
+								<h2>{this.state.modal.title}</h2>
+								<p>{this.state.modal.description}</p>
+							</ModalDialog>
+						</ModalContainer>
+					</div>
+				}
 
 			</div>
 		);

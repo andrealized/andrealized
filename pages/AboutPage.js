@@ -1,30 +1,6 @@
 import React, { Component } from 'react';
 var LeftArrow = require('react-icons/lib/ti/arrow-left');
 
-const PHOTO_SET = [
-  {
-	src: '/static/images/img1.jpg',
-	width: 640,
-	height: 640,
-	alt: 'code',
-	label: 'code'
-  },
-  {
-	src: '/static/images/img2.jpg',
-	width: 640,
-	height: 640,
-	alt: 'photography',
-	label: 'photography'
-  },
-  {
-	src: '/static/images/img3.jpg',
-	width: 640,
-	height: 640,
-	alt: 'design',
-	label: 'design'
-  },
-];
-
 export default class AboutPage extends Component {
 
 	render() {
@@ -44,7 +20,8 @@ export default class AboutPage extends Component {
 						is a state where none of my friends have lived before. Last but not least, I fell in love with the 360 
 						degree mountain views, numerous ski resorts within an hour's drive, and the "Best Snow on Earth". That's 
 						in quotes because that's what it literally says on Utah license plates. While living in Utah, I also 
-						picked up mountain biking and rock climbing.
+						picked up mountain biking and rock climbing. A few of my other hobbies include playing the piano and 
+						practicing calligraphy.
 					</div>
 					
 					<img src="/static/images/myphoto.png" className="bio-photo" />
